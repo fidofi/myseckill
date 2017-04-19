@@ -1,0 +1,80 @@
+package org.seckill.entity;
+
+/**
+ * Created by fido on 2017/4/18.
+ * 商品库存秒杀表
+ */
+
+import java.util.Date;
+
+public class Seckill {
+    private long seckillId; //商品id
+    private String name;//商品名字
+    private int number;//商品数量
+    private Date startTime;//秒杀开始时间
+    private Date endTime;//秒杀结束时间
+    private Date createTime;//商品创建时间
+
+    public long getSeckillId() {
+        return seckillId;
+    }
+
+    public void setSeckillId(long seckillId) {
+        this.seckillId = seckillId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    //重写toString方法
+    @Override
+    public String toString() {
+        return "Seckill [seckillId=" + seckillId + ", name=" + name
+                + ", number=" + number + ", startTime=" + startTime
+                + ", endTime=" + endTime + ", createTime=" + createTime
+                + ", getSeckillId()=" + getSeckillId() + ", getName()="
+                + getName() + ", getNumber()=" + getNumber()
+                + ", getStartTime()=" + getStartTime() + ", getEndTime()="
+                + getEndTime() + ", getCreateTime()=" + getCreateTime()
+                + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+                + ", toString()=" + super.toString() + "]";
+    }
+
+}
